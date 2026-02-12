@@ -10,7 +10,7 @@ class Solution {
                 mi = i;
             }
         }
-        if(mi == Integer.MIN_VALUE){
+        if(mi == Integer.MAX_VALUE){
             return -1;
         }
         return mi;
