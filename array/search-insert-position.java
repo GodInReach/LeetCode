@@ -1,3 +1,6 @@
+// Time = O(LogN)
+// Space = O(1)
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int min = 0;
