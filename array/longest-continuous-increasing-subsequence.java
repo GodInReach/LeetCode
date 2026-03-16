@@ -4,7 +4,10 @@ class Solution {
         int now = 1;
         for(int i = 1; i<nums.length; i++){
             if(nums[i-1]<nums[i]){
-                max++;
+                now++;
+            }
+            else{
+                now = 1;
             }
             max = Math.max(now,max);
         }
