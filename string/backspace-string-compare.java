@@ -21,7 +21,7 @@ class Solution {
                 sb2.deleteCharAt(sb2.length()-1);
             }
             else{
-                sb2.append(s.charAt(i));
+                sb2.append(t.charAt(i));
             }
         }
         return (sb1.toString()).equals(sb2.toString());
