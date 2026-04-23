@@ -4,7 +4,7 @@ class Solution {
         int y = nums[1];
         int z = nums[2];
         if(x+y<=z || y+z<=x || x+z<=y){
-            return "null";
+            return "none";
         }
         if(x==y&&y==z){
             return "equilateral";
@@ -15,6 +15,6 @@ class Solution {
         else if(x+y>z||y+z>x||x+z>y){
             return "scalene";
         }
-        return "null";
+        return "none";
     }
 }
