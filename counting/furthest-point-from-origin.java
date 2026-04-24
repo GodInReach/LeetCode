@@ -14,6 +14,6 @@ class Solution {
                 u++;
             }
         }
-        return Math.abs(l-r+u);
+        return Math.abs(l-r)+u;
     }
 }
