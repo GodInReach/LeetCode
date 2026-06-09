@@ -22,9 +22,7 @@ class Solution {
         int maxl = 0;
         for(int row = 0; row<rlen; row++){
             for(int col = 0; col<clen; col++){
-                if(mem[row][col]==0){
-                    maxl=Math.max(maxl,dfs(matrix,mem,rlen,clen,row,col));
-                }
+                maxl=Math.max(maxl,dfs(matrix,mem,rlen,clen,row,col));
             }
         }
         return maxl;
