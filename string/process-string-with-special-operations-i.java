@@ -5,12 +5,16 @@ class Solution {
             char c = s.charAt(i);
             if(c=='#'){
                 op.append(op.toString());
-            } else if (c=='*'){
-                op.deleteCharAt(op.length()-1);
             } else if (c=='%'){
                 op.reverse();
-            } else{
+            } else if (c!='*'){
                 op.append(c);
+            } else {
+                if(op.length()!=0){
+                    if (c=='*'){
+                        op.deleteCharAt(op.length()-1);
+                    }
+                }
             }
         }
         return op.toString();
