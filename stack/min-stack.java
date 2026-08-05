@@ -1,6 +1,6 @@
 class MinStack {
-    Stack<int[]> stk;
-    int minn = Integer.MAX_VALUE;
+    Stack<long[]> stk;
+    long minn = Integer.MAX_VALUE;
 
     public MinStack() {
         stk = new Stack<>();
@@ -8,7 +8,7 @@ class MinStack {
     
     public void push(int value) {
         minn = Math.min(minn,value);
-        int[] arr = {value, minn};
+        long[] arr = {value, minn};
         stk.push(arr);
     }
     
@@ -17,11 +17,11 @@ class MinStack {
     }
     
     public int top() {
-        return stk.peek()[0];
+        return (int)stk.peek()[0];
     }
     
     public int getMin() {
-        return stk.peek()[1];
+        return (int)stk.peek()[1];
     }
 }
 
