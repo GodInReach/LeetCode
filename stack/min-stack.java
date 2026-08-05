@@ -17,6 +17,9 @@ class MinStack {
         if(stk.isEmpty()){
             minn = Integer.MAX_VALUE;
         }
+        else{
+            minn = getMin();
+        }
     }
     
     public int top() {
