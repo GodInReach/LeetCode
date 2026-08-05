@@ -1,6 +1,6 @@
 class MinStack {
     Stack<long[]> stk;
-    long minn = Integer.MAX_VALUE;
+    long minn = Integer.MAX_VALUE-1;
 
     public MinStack() {
         stk = new Stack<>();
@@ -14,6 +14,9 @@ class MinStack {
     
     public void pop() {
         stk.pop();
+        if(stk.isEmpty()){
+            minn = Integer.MAX_VALUE;
+        }
     }
     
     public int top() {
