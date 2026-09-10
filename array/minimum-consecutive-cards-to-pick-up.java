@@ -17,6 +17,6 @@ class Solution {
         if(mini==Integer.MAX_VALUE){
             return -1;
         }
-        return mini+1;
+        return mini;
     }
 }
