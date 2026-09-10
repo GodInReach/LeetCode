@@ -5,7 +5,7 @@ class Solution {
         for(int i = 0; i<cards.length; i++){
             for(int j = i+1; j<cards.length; j++){
                 if(cards[i]==cards[j]){
-                    arr[i]=j-i-1;
+                    arr[i]=j-i+1;
                     break;
                 }
             }
