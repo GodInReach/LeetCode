@@ -4,7 +4,7 @@ class Solution {
         int[] op = new int[len+1];
         int rem = 1;
         for(int i = len; i>0; i--){
-            if(dig[i-1]==9){
+            if(dig[i-1]==9 && rem != 0){
                 op[i]=0;
                 rem = 1;
             }
