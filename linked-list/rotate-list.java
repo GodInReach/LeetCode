@@ -20,6 +20,9 @@ class Solution {
             temp=temp.next;
         }
         n++;
+        if(n==1){
+            return head;
+        }
         ListNode tail = temp;
         int rot = k%n;
         ListNode temp2 = head;
