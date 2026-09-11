@@ -26,7 +26,7 @@ class Solution {
         ListNode tail = temp;
         int rot = k%n;
         ListNode temp2 = head;
-        for(int i = 0; i<rot; i++){
+        for(int i = 0; i<n-rot-1; i++){
             temp2=temp2.next;
         }
         temp = temp2.next;
