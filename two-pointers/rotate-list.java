@@ -20,11 +20,11 @@ class Solution {
             temp=temp.next;
         }
         n++;
-        if(n==1){
+        int rot = k%n;
+        if( n== 1 || rot==0 || k == 0){
             return head;
         }
         ListNode tail = temp;
-        int rot = k%n;
         ListNode temp2 = head;
         for(int i = 0; i<n-rot-1; i++){
             temp2=temp2.next;
